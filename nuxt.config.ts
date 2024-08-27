@@ -127,7 +127,7 @@ export default defineNuxtConfig({
     },
     locales: [
       'en',
-      'it',
+      // 'it',
       //  'fr',
     ],
     defaultLocale: 'en',

@@ -9,7 +9,7 @@ import experiences from '~/data/about'
     </h3>
     <div class="flex flex-col gap-4 text-main">
       <div
-        v-for="experience in experiences[$i18n.locale as 'en' | 'fr']"
+        v-for="experience in experiences[$i18n.locale as any]"
         :key="experience.title"
       >
         <h4 class="font-semibold text-main">
