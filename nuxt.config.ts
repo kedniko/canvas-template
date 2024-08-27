@@ -9,9 +9,9 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       script: [
         {
-          'src': 'https://analytics.hrcd.fr/js/script.js',
+          'src': 'https://analytics.kedniko.com/js/script.js',
           'defer': true,
-          'data-domain': 'canvas.hrcd.fr',
+          'data-domain': 'kedniko.com',
         },
       ],
     },
@@ -26,11 +26,11 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: process.env.NUXT_SITE_URL || 'https://canvas.hrcd.fr',
+    url: process.env.NUXT_SITE_URL || 'https://kedniko.com',
     identity: {
       type: 'Person',
     },
-    twitter: '@HugoRCD__',
+    twitter: '@kedniko',
   },
 
   css: ['~/assets/style/main.css'],
@@ -94,7 +94,11 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
     baseUrl: '/',
-    locales: ['en', 'fr'],
+    locales: [
+      'en',
+      'it',
+      // 'fr',
+    ],
     defaultLocale: 'en',
     vueI18n: '~/i18n.config.ts',
   },
@@ -121,7 +125,11 @@ export default defineNuxtConfig({
     markdown: {
       anchorLinks: false,
     },
-    locales: ['en', 'fr'],
+    locales: [
+      'en',
+      'it',
+      //  'fr',
+    ],
     defaultLocale: 'en',
   },
 
