@@ -4,12 +4,12 @@ const socialMediaRegexMap = [
   { regex: /twitter\.com/, name: 'X / Twitter', logo: 'SvgoX' },
   { regex: /linkedin\.com/, name: 'LinkedIn', logo: 'SvgoLinkedin' },
   { regex: /instagram\.com/, name: 'Instagram', logo: 'SvgoInstagram' },
-  { regex: /spotify\.com/, name: 'Spotify', logo: 'SvgoSpotify' },
+  // { regex: /spotify\.com/, name: 'Spotify', logo: 'SvgoSpotify' },
 ]
 
 const { socials } = useAppConfig()
 const mappedSocials = Object.values(socials).map((link) => {
-  const foundSocial = socialMediaRegexMap.find(social => social.regex.test(link))
+  const foundSocial = socialMediaRegexMap.find(social => social.regex.test(link as string))
   if (!foundSocial) throw new Error(`No social media found for link: ${link}`)
   const { name, logo } = foundSocial
   return { name, link, logo }

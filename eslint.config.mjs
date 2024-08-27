@@ -8,5 +8,6 @@ export default createConfigForNuxt({
   .override('nuxt/vue/rules', {
     rules: {
       'vue/multi-word-component-names': 'off',
+      '@typescript-eslint/no-unused-vars': 'warn',
     },
   })

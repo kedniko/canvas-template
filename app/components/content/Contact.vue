@@ -1,5 +1,12 @@
 <script setup lang="ts">
-import type { ContactEmail } from '~/types/ContactEmail'
+type ContactEmail = {
+  email: string
+  subject: string
+  message: string
+  phone: string
+  fullname: string
+  budget?: number
+}
 
 const appConfig = useAppConfig()
 const { t } = useI18n()
@@ -36,6 +43,7 @@ async function submitForm() {
     subject.value = ''
     toast.success(t('contact.success'))
   }
+
   catch (error) {
     toast.error(t('contact.error'))
   }
@@ -184,7 +192,7 @@ defineOgImage({ url: appConfig.openGraphImage, width: 1200, height: 630, alt: 'H
           </dd>
         </div>
         <div>
-          <MeetingButton />
+          <!-- <MeetingButton /> -->
         </div>
       </div>
     </div>
