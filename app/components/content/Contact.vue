@@ -1,12 +1,5 @@
 <script setup lang="ts">
-type ContactEmail = {
-  email: string
-  subject: string
-  message: string
-  phone: string
-  fullname: string
-  budget?: number
-}
+import type { ContactEmail } from '~/types/ContactEmail'
 
 const appConfig = useAppConfig()
 const { t } = useI18n()
