@@ -13,7 +13,7 @@ export default defineEventHandler(async (event: H3Event) => {
       to: ['ked.niko@gmail.com'],
       subject: 'Nuovo messaggio dal tuo sito web',
       html: `
-      <p>Un nuovo messaggio è stato inviato dal modulo di contatto HR Folio.</p>
+      <p>Un nuovo messaggio è stato inviato dal modulo di contatto del sito web kedniko.com.</p>
       <p>Ecco i dettagli del messaggio:</p>
       <ul>
         <li>Nome : ${fullname}</li>
