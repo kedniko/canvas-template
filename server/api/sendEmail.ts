@@ -10,7 +10,7 @@ export default defineEventHandler(async (event: H3Event) => {
     const { email, subject, message, phone, fullname } = body
     return await resend.emails.send({
       from: 'Kedniko website <contact@kedniko.com>',
-      to: ['contact@kedniko.com'],
+      to: ['ked.niko@gmail.com'],
       subject: 'Nuovo messaggio dal tuo sito web',
       html: `
       <p>Un nuovo messaggio è stato inviato dal modulo di contatto HR Folio.</p>
