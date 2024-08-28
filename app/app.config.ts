@@ -12,7 +12,7 @@ export default defineAppConfig({
     twitter: 'https://twitter.com/kedniko',
     linkedin: 'https://www.linkedin.com/in/nikodem-kedzierski/',
     instagram: 'https://www.instagram.com/kedniko',
-    // spotify: 'https://open.spotify.com/user/yuvl0zpp3bpx4hne1ag7huten?si=df7ee2777c0c4fc4',
+    spotify: 'https://open.spotify.com/user/nikoked',
   },
   ui: {
     primary: 'emerald',
