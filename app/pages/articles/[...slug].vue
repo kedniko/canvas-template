@@ -85,7 +85,11 @@ defineOgImage({
           :locale="locale"
           find="one"
         >
-          <ContentRenderer :value="data" />
+        <ContentRenderer :value="data">
+            <template #empty>
+              <p>No content found.</p>
+            </template>
+          </ContentRenderer>
         </ContentQuery>
       </article>
       <LayoutFooter class="pt-6" />
